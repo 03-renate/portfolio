@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-color-light: #F8F9FA;
+  --bg-color-dark: #212529;
+  --text-color-light: #212529;
+  --text-color-dark: #E9ECEF;
+  --primary-dark-color: #343A40;
+  --primary-light-color: #DEE2E6;
+  --secondary-dark-color: #495057;
+  --secondary-light-color: #CED4DA;
+  --tertiary-dark-color: #ADB5BD;
+  --tertiary-light-color: #ADB5BD;
+  --button-dark-color: #A79ED7 ;
+  --button-light-color: #7285C7;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+[data-theme="light"] {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+  --primary-color: var(--primary-light-color);
+  --secondary-color: var(--secondary-light-color);
+  --tertiary-color: var(--tertiary-light-color);
+  --button-color: var(--button-light-color);
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --primary-color: var(--primary-dark-color);
+  --secondary-color: var(--secondary-dark-color);
+  --tertiary-color: var(--tertiary-dark-color);
+  --button-color: var(--button-dark-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: 'Lora';
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+a {
+  font-family: 'Montserrat';
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--button-color);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}

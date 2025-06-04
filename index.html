@@ -1,13 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CodeTales</title>
+    <meta
+      name="description"
+      content="Hi, I'm [Your Name], a frontend developer focused on building responsive and user-friendly websites. Check out my work, learn about my skills, and feel free to reach out if you'd like to collaborate."
+    />
+    <meta
+      name="keywords"
+      content="frontend developer, html, css, javascript, UI/UX design, portfolio, oslo"
+    />
+    <meta name="author" content="Code Tales" />
+
+    <!-- From google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/icon" href="src/assets/seedling-solid.svg" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/49c1127b94.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles/style.css" />
+
+    <!-- JS -->
+    <script type="module" src="src/nav.js" defer></script>
+    <script type="module" src="src/mode.js" defer></script>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+
+  <body data-theme="dark">
+    <header>
+      <nav class="header">
+        <!-- Mode btn START -->
+        <button class="theme-toggle">
+          <i id="theme-icon" class="fa-regular fa-sun"></i>
+        </button>
+        <!-- Mode btn END -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- SideNav START -->
+      <aside id="navbar" class="sideNav">
+        <ul class="nav">
+          <li>
+            <button data-target="home" class="active">
+              <i class="fa-solid fa-house"></i>
+              <h4>home</h4>
+            </button>
+          </li>
+          <li>
+            <button data-target="about">
+              <i class="fa-solid fa-briefcase"></i>
+              <h4>about</h4>
+            </button>
+          </li>
+          <li>
+            <button data-target="projects">
+              <i class="fa-solid fa-rocket"></i>
+              <h4>projects</h4>
+            </button>
+          </li>
+          <li>
+            <button data-target="contact">
+              <i class="fa-regular fa-paper-plane"></i>
+              <h4>contact</h4>
+            </button>
+          </li>
+        </ul>
+      </aside>
+      <!-- SideNav END -->
+
+      <!-- Home START -->
+      <section id="home" class="section home active">
+        <article class="home-container">
+          <div class="home-info">
+            <h1>hi, i'm a... <span class="">frontend dev</span></h1>
+
+            <div class="home-btns">
+              <button class="pri-btn"><h4>view my work</h4></button>
+
+              <button class="sec-btn">
+                <i class="fa-solid fa-download"></i>
+                <h4>download CV</h4>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bouncing btn (using id=navbar to take user to about section) -->
+          <div id="navbar">
+            <button data-target="about" class="bouncing-btn">
+              <i class="fa-solid fa-down-long"></i>
+            </button>
+          </div>
+        </article>
+      </section>
+      <!-- Home END -->
+
+      <!-- About START -->
+      <section id="about" class="resume section hidden">
+        <article class="abt-head">
+          <div class="abt-photo">
+            <img
+              src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+              alt="profile"
+            />
+          </div>
+
+          <div class="title">
+            <h2>renate pedersen</h2>
+            <i>junior frontend dev</i>
+          </div>
+
+          <div class="social">
+            <a href="https://github.com/03-renate">
+              <i class="fa-brands fa-github-alt"></i> github
+            </a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i> linkedIn </a>
+            <button data-target="contact">
+              <i class="fa-solid fa-envelope"></i> example@gmail.com
+            </button>
+          </div>
+        </article>
+
+        <div class="seperator"></div>
+
+        <article class="abt-main">
+          <!-- Left Column START -->
+          <div class="abt-left-column">
+            <div class="abt-statement">
+              <h3>personal statement</h3>
+              <p>
+                Hello, I'm a frontend developer with a passion for blending
+                creativity and functionality to craft engaging user experiences.
+                My journey into coding started with Python and a fascination for
+                languages—spoken and coded—which led me to explore how design
+                and technology connect people.
+              </p>
+              <p>
+                What I love about frontend development is the chance to bring
+                ideas to life. From planning and development to seeing the final
+                result, I enjoy creating interfaces that users interact with
+                directly. It's a mix of problem-solving and creative freedom
+                that keeps every day exciting.
+              </p>
+              <p>
+                When I'm not coding, I enjoy spending time outdoors, gaming,
+                swimming, or exploring new places. I'm also keen to dive deeper
+                into language technology, ethical hacking, and design someday.
+              </p>
+              <p>
+                If you're looking for a developer who combines curiosity and
+                creativity, let's connect - I'd love to hear about what you're
+                building!
+              </p>
+            </div>
+
+            <div class="abt-education">
+              <h3>education</h3>
+              <div class="abt-sub-titles">
+                <strong>front-end development</strong><span>2024 - 2026</span>
+              </div>
+              <ul>
+                <li><i>higher professional degree</i></li>
+                <li><i>noroff</i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Left Column END -->
+
+          <!-- Right Column START -->
+          <div class="abt-right-column">
+            <div class="abt-skills">
+              <h3>skills</h3>
+              <ul>
+                <li><i>html5</i></li>
+                <li><i>CSS3</i></li>
+                <li><i>javascript</i></li>
+                <li><i>figma - wireframes + prototyping</i></li>
+              </ul>
+            </div>
+
+            <div class="abt-experience">
+              <h3>experience</h3>
+
+              <div class="abt-experience-item">
+                <div class="abt-sub-titles">
+                  <strong>junior assistant </strong>
+                  <span>2022 - Now</span>
+                </div>
+                <ul>
+                  <li>
+                    <i
+                      >Mapped ports using AIS signals and polygons. Verified
+                      port existence with geospatial analysis.</i
+                    >
+                  </li>
+                  <li>
+                    <i
+                      >Processed blob files to update databases, and integrated
+                      data with Azure Language Studio.</i
+                    >
+                  </li>
+                  <li>
+                    <i
+                      >Designed and refined AI prompts. Optimized natural
+                      language model outputs.</i
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column END -->
+        </article>
+      </section>
+
+      <!-- About END -->
+
+      <!-- Projects START -->
+      <section id="projects" class="projects-container section hidden">
+        <article>
+          <h2>Projects</h2>
+
+          <div class="projects">
+            <div class="project-card">
+              <h3>JS-project</h3>
+              <div class="project-btns">
+                <a class="pri-btn" href="#">deploy</a>
+                <a class="pri-btn" href="#">view code</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3>kidBank</h3>
+              <div class="project-btns">
+                <a class="pri-btn" href="#">deploy</a>
+                <a class="pri-btn" href="#">view code</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <h3>norway unfiltered</h3>
+              <div class="project-btns">
+                <a class="pri-btn" href="#">deploy</a>
+                <a class="pri-btn" href="#">view code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Projects END -->
+
+      <!-- Contact START -->
+      <section id="contact" class="contact section hidden">
+        <article class="form-container">
+          <h2>Contact Me</h2>
+          <form id="contactForm">
+            <label for="name"><p>Name:</p> </label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email"><p>Email:</p> </label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message"><p>Message:</p> </label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+
+            <button class="submit-btn" type="submit">
+              <h4><i class="fa-regular fa-paper-plane"></i>submit</h4>
+            </button>
+          </form>
+          <div id="formMessage"></div>
+        </article>
+      </section>
+      <!-- Contact END -->
+    </main>
   </body>
 </html>

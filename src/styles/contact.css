@@ -1,0 +1,40 @@
+.contact{
+    height: 100dvh;
+}
+
+.form-container{
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--primary-color);    
+}
+
+.form-container label{
+    display: block;
+}
+
+.form-container input, .form-container textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.form-container input, .form-container textarea{
+    border: 2px solid var(--secondary-color);
+}
+
+#formMessage {
+    margin-top: 10px;
+    text-align: center;
+    color: aqua;
+}
+
+@media (max-width: 430px) {
+  .form-container{
+    width: 90%;
+  }
+}

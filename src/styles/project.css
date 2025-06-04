@@ -1,0 +1,34 @@
+.projects-container{
+    height: 100dvh;
+    width: auto;
+}
+
+.projects{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.project-card{
+    max-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    box-shadow: var(box-shadow);
+}
+
+.project-btns{
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+@media (max-width: 430px) {
+    .projects{
+        flex-direction: column;
+    }
+}

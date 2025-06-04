@@ -1,0 +1,170 @@
+.resume{
+    max-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/*ABT HEADER*/
+.abt-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.abt-head h2{
+    color: var(--button-color);
+}
+
+.abt-photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.resume .title{
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-left: 2px solid var(--secondary-color);
+    padding-left: 15px;
+    gap: 0.5rem;
+}
+
+.social button{
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+.social button:hover{
+    color: var(--button-color);
+}
+
+.social i{
+    font-size: 1rem;
+}
+
+.seperator{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, var(--bg-color), var(--primary-color), var(--secondary-color), var(--tertiary-color), var(--bg-color));
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
+}
+
+.abt-main{
+    
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+/*LEFT SIDE*/
+.abt-left-column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1rem;
+}
+
+
+
+/*RIGHT SIDE*/
+.abt-right-column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 1rem;
+}
+
+.abt-skills, .abt-education, .abt-statement, .abt-experience{
+    height: 150px;
+    border-left: 3px solid var(--button-color);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.abt-statement p, .abt-experience li{
+    margin-top: 0.5rem;
+}
+
+.abt-skills h3, .abt-education h3, .abt-statement h3, .abt-experience h3{
+    margin-bottom: 0.5rem;
+}
+
+.abt-skills li, .abt-education li, .abt-statement li, .abt-experience li{
+    margin-left: 1rem;
+}
+
+.abt-education span, .abt-experience span{
+    border-radius: 20px;
+    padding: 5px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.abt-skills, .abt-education strong, .abt-experience strong, .abt-education li{
+    text-transform: capitalize;
+}
+
+.abt-sub-titles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 430px) {
+    .resume{
+        height: 100dvh;
+        overflow-y: auto;
+    }
+
+    .abt-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .abt-photo img{
+        border-radius: 10px;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .abt-main{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
