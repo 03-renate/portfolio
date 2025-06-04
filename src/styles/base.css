@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --bg-color-light: #F8F9FA;
+  --bg-color-light: #F4F3EE;
   --bg-color-dark: #212529;
   --text-color-light: #212529;
-  --text-color-dark: #E9ECEF;
+  --text-color-dark: #F4F3EE;
   --primary-dark-color: #343A40;
   --primary-light-color: #DEE2E6;
   --secondary-dark-color: #495057;
